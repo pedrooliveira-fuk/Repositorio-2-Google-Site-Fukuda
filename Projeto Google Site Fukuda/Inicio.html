@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+
+<style>
+:root {
+    --vermelho: #8B0000;
+    --preto: #000000;
+    --cinza: #ffffff;
+    --branco: #ffffff;
+    --texto-sec: #555555;
+    --borda: #dddddd;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--branco);
+    color: var(--preto);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    color: var(--texto-sec);
+    max-width: 500px;
+}
+
+/* SEARCH */
+.search-box {
+    margin-top: 25px;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px; /* igual card */
+    border-radius: 12px; /* igual card */
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    color: var(--preto);
+    transition: 0.2s;
+    outline: none;
+}
+
+/* mesmo efeito hover do card */
+.search-input:hover {
+    border-color: var(--vermelho);
+    transform: translateY(-3px);
+}
+
+/* foco mais elegante */
+.search-input:focus {
+    border-color: var(--vermelho);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: -40px auto 40px;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+/* CARD */
+.card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: var(--vermelho);
+    transform: translateY(-3px);
+}
+
+/* ICON */
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(139,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--vermelho);
+    font-size: 18px;
+}
+
+/* TEXT */
+.label {
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.desc {
+    font-size: 13px;
+    color: var(--texto-sec);
+}
+
+/* ARROW */
+.arrow {
+    margin-left: auto;
+    color: var(--texto-sec);
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<!-- HERO -->
+<div class="hero">
+    <h1>Início - Arquitetura de Governança de Dados e Informações – Fukuda Company</h1>
+    <p>Central de documentos, processos e governança da Fukuda Company.</p>
+    <div class="search-box">
+        <input class="search-input" placeholder="Pesquisar no portal...">
+    </div>
+</div>
+
+<!-- MENU PRINCIPAL -->
+<div class="container">
+
+    <a href="https://sites.google.com/fukuda.co/arquitetura-de-governana-de-da/1-0-governan%C3%A7a-regras-da-empresa" class="card">
+        <div class="icon">📘</div>
+        <div>
+            <div class="label">1.0 Governança</div>
+            <div class="desc">Regras, políticas e compliance</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a href="/estrategia" target="_parent" class="card">
+        <div class="icon">🎯</div>
+        <div>
+            <div class="label">2.0 Estratégia</div>
+            <div class="desc">Planejamento e metas corporativas</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a href="/gestao" target="_parent" class="card">
+        <div class="icon">📊</div>
+        <div>
+            <div class="label">3.0 Gestão</div>
+            <div class="desc">Execução, processos e organização</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a href="/contratos" target="_parent" class="card">
+        <div class="icon">📄</div>
+        <div>
+            <div class="label">4.0 Contratos</div>
+            <div class="desc">Documentos e parceiros</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a href="/institucional" target="_parent" class="card">
+        <div class="icon">🏢</div>
+        <div>
+            <div class="label">5.0 Institucional</div>
+            <div class="desc">Quem somos e onboarding</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+    <a href="/reunioes" target="_parent" class="card">
+        <div class="icon">🗂️</div>
+        <div>
+            <div class="label">6.0 Reuniões</div>
+            <div class="desc">Atas, pautas e 3Q</div>
+        </div>
+        <div class="arrow">›</div>
+    </a>
+
+</div>
+
+</body>
+</html>

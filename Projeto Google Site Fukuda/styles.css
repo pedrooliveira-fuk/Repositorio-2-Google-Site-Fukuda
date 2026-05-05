@@ -1,0 +1,121 @@
+:root {
+    --vermelho: #8B0000;
+    --preto: #000000;
+    --cinza: #ffffff;
+    --branco: #ffffff;
+    --texto-sec: #555555;
+    --borda: #dddddd;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--branco);
+    color: var(--preto);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    color: var(--texto-sec);
+    max-width: 500px;
+}
+
+/* SEARCH */
+.search-box {
+    margin-top: 25px;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--borda);
+    background: var(--branco);
+    color: var(--preto);
+    transition: 0.2s;
+    outline: none;
+}
+
+.search-input:hover {
+    border-color: var(--vermelho);
+    transform: translateY(-3px);
+}
+
+.search-input:focus {
+    border-color: var(--vermelho);
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: -40px auto 40px;
+    padding: 0 20px;
+    color: #ffffff;
+}
+
+/* CARD */
+.card {
+    background: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+    transition: 0.2s;
+}
+
+.card:hover {
+    border-color: var(--vermelho);
+    transform: translateY(-3px);
+}
+
+/* ICON */
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(139,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: var(--vermelho);
+    font-size: 18px;
+}
+
+/* TEXT */
+.label {
+    font-weight: 600;
+    color: var(--preto);
+}
+
+.desc {
+    font-size: 13px;
+    color: var(--texto-sec);
+}
+
+/* ARROW */
+.arrow {
+    margin-left: auto;
+    color: var(--texto-sec);
+    font-size: 20px;
+}
